@@ -7,6 +7,7 @@ pipeline {
          stage('init') {
             steps {
                 sh '''
+                cd ./wrapper
                terraform init
                  '''
             }
