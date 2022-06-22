@@ -8,6 +8,7 @@ pipeline {
             steps {
                 sh '''
                 cd ./wrapper
+                pwd
                terraform init
                  '''
             }
