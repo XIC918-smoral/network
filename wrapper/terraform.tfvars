@@ -7,6 +7,3 @@ private_subnets_cidr = ["172.30.8.0/22", "172.30.12.0/22", "172.30.16.0/22", "17
 
 avaialability_zones = ["ap-south-1a", "ap-south-1b"]
 
-
-#logs_bucket_arn = "arn:aws:s3:::uolo-alb-logs"
-# logs_bucket = my-network-bucket
