@@ -25,7 +25,7 @@ pipeline {
                 sh '''
                 
                 
-                terraform plan
+                terraform plan -var-file="terraform.tfvars"
                 '''
                 
             }
@@ -39,7 +39,7 @@ pipeline {
                 sh '''
                 
                 
-                terraform apply -auto-approve
+                terraform apply -auto-approve -var-file="terraform.tfvars"
                 '''
                 
             }
