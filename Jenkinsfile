@@ -16,6 +16,8 @@ pipeline {
         stage('validate'){
             steps {
                 sh '''
+                cd ./wrapper
+                pwd
                 terraform validate 
                 '''
                 
