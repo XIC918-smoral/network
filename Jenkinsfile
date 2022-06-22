@@ -27,8 +27,8 @@ pipeline {
     stage(' plan') {
             steps {
                 sh '''
-                
-                
+                cd ./wrapper
+                pwd
                 terraform plan -var-file="terraform.tfvars"
                 '''
                 
@@ -41,8 +41,8 @@ pipeline {
             
         steps {
                 sh '''
-                
-                
+                cd ./wrapper
+                pwd
                 terraform apply -auto-approve -var-file="terraform.tfvars"
                 '''
                 
